@@ -17,6 +17,7 @@
     <ProjectReference Include="..\Application\Application.csproj" />
     <ProjectReference Include="..\DataAccess\DataAccess.csproj" />
     <ProjectReference Include="..\DomainServices.Implementation\DomainServices.Implementation.csproj" />
+    <ProjectReference Include="..\Infrastructure.Implementation\Infrastructure.Implementation.csproj" />
   </ItemGroup>
 
 </Project>

@@ -9,7 +9,11 @@ using DataAccess;
 using DataAccess.Interface;
 using DomainServices.Interfaces;
 using DomainServices.Implementation;
+using Infrastructure.Implementation;
+using Infrastructure.Interfaces.Integrations;
+using Infrastructure.Interfaces.WebApp;
 using Microsoft.EntityFrameworkCore;
+using WebApp.Services;
 
 namespace WebApp
 {
@@ -26,12 +30,20 @@ namespace WebApp
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddControllers();
-            
-            services.AddScoped<IOrderService, OrderService>();
+            //Domain
             services.AddScoped<IOrderDomainService, OrderDomainService>();
+
+            //Infrastructure
+            services.AddScoped<ICurrentUserService, CurrentUserService>();
+            services.AddScoped<IEmailService, EmailService>();
             services.AddDbContext<IDbContext, AppDbContext>(builder =>
                 builder.UseSqlServer(Configuration.GetConnectionString("MsSql")));
+
+            //Application
+            services.AddScoped<IOrderService, OrderService>();
+
+            //Frameworks
+            services.AddControllers();
             services.AddAutoMapper(typeof(MapperProfile));
         }
 
