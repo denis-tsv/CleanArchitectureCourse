@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
 using DataAccess;
+using DomainServices.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace Application
@@ -13,11 +14,13 @@ namespace Application
     {
         private readonly AppDbContext _dbContext;
         private readonly IMapper _mapper;
+        private readonly IOrderDomainService _orderDomainService;
 
-        public OrderService(AppDbContext dbContext, IMapper mapper)
+        public OrderService(AppDbContext dbContext, IMapper mapper, IOrderDomainService orderDomainService)
         {
             _dbContext = dbContext;
             _mapper = mapper;
+            _orderDomainService = orderDomainService;
         }
         public async Task<OrderDto> GetByIdAsync(int id)
         {
@@ -29,7 +32,7 @@ namespace Application
             if (order == null) throw new EntityNotFoundException();
 
             var dto = _mapper.Map<OrderDto>(order);
-            dto.Total = order.Items.Sum(x => x.Quantity * x.Product.Price);
+            dto.Total = _orderDomainService.GetTotal(order);
 
             return dto;
         }

@@ -14,5 +14,7 @@ namespace Domain.Entities
         public OrderStatus Status { get; set; }
 
         public ICollection<OrderItem> Items { get; set; }
+
+        
     }
 }
