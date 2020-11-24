@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DataAccess.Interface\Infrastructure.Interfaces.csproj" />
+    <ProjectReference Include="..\Email.Interfaces\Email.Interfaces.csproj" />
   </ItemGroup>
 
 </Project>
