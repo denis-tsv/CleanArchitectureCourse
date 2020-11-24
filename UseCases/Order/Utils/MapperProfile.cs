@@ -13,6 +13,8 @@ namespace Application
         public MapperProfile()
         {
             CreateMap<Order, OrderDto>();
+            CreateMap<CreateOrderDto, Order>();
+            CreateMap<OrderItemDto, OrderItem>();
         }
     }
 }

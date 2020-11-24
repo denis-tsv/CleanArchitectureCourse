@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Application;
+using Application.Commands.CreateOrder;
 using AutoMapper;
 using DataAccess;
 using DataAccess.Interface;
@@ -12,6 +13,7 @@ using DomainServices.Implementation;
 using Infrastructure.Implementation;
 using Infrastructure.Interfaces.Integrations;
 using Infrastructure.Interfaces.WebApp;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
 using WebApp.Services;
 
@@ -40,11 +42,11 @@ namespace WebApp
                 builder.UseSqlServer(Configuration.GetConnectionString("MsSql")));
 
             //Application
-            services.AddScoped<IOrderService, OrderService>();
 
             //Frameworks
             services.AddControllers();
             services.AddAutoMapper(typeof(MapperProfile));
+            services.AddMediatR(typeof(CreateOrderCommandHandler));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
