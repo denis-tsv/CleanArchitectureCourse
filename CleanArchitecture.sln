@@ -23,21 +23,31 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 Infrastructure.Interfaces
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 Infrastructure.Implementation", "4 Infrastructure.Implementation", "{FA0B6190-6D5C-401A-93DA-FD25C32EAE75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Email.Interfaces", "Email.Interfaces\Email.Interfaces.csproj", "{E38F312D-F15E-486F-8A62-56955C29F678}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Email.Interfaces", "Email.Interfaces\Email.Interfaces.csproj", "{E38F312D-F15E-486F-8A62-56955C29F678}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp.Interfaces", "WebApp.Interfaces\WebApp.Interfaces.csproj", "{8243C8CC-34F3-4A01-BE85-97821D7F6E6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp.Interfaces", "WebApp.Interfaces\WebApp.Interfaces.csproj", "{8243C8CC-34F3-4A01-BE85-97821D7F6E6B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess.Interfaces", "DataAccess.Interfaces\DataAccess.Interfaces.csproj", "{949A708D-C902-4B03-94E3-DDD33792E90B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Email.Implementation", "Email.Implementation\Email.Implementation.csproj", "{69FAC226-23F9-42B6-B5E3-CA9D39B294B9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UseCases", "UseCases\UseCases.csproj", "{ED8C1CE0-62FB-400A-B116-2CA60BAF5937}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mobile.UseCases", "UseCases\Mobile.UseCases.csproj", "{ED8C1CE0-62FB-400A-B116-2CA60BAF5937}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationServices.Interfaces", "ApplicationServices.Interfaces\ApplicationServices.Interfaces.csproj", "{92C84090-B79F-4FD0-A2E9-91301F72D5FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationServices.Interfaces", "ApplicationServices.Interfaces\ApplicationServices.Interfaces.csproj", "{92C84090-B79F-4FD0-A2E9-91301F72D5FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationServices.Implementation", "ApplicationServices.Implementation\ApplicationServices.Implementation.csproj", "{7C59FA33-DBB0-4DEF-B3BF-27732A00D3E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationServices.Implementation", "ApplicationServices.Implementation\ApplicationServices.Implementation.csproj", "{7C59FA33-DBB0-4DEF-B3BF-27732A00D3E1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 Application", "3 Application", "{2EBD0ADE-9AAC-4AAF-AF73-D6251DCA90DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mobile.Controllers", "Controllers\Mobile.Controllers.csproj", "{D422BAD0-6106-4309-8A71-341207B9A8A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.Controllers", "WebApi.Controllers\Web.Controllers.csproj", "{7B6EF11D-F301-4D53-A9DF-252ABE34488A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{F3E90150-5EA9-4B60-AB84-CC5FB3B24E0B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mobile", "Mobile", "{98E9071D-2FAE-40DA-9011-D4A5FC6E63FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.UseCases", "Web.UseCases\Web.UseCases.csproj", "{0494F5B0-B02D-48B3-891C-39364DA0D072}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -97,6 +107,18 @@ Global
 		{7C59FA33-DBB0-4DEF-B3BF-27732A00D3E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C59FA33-DBB0-4DEF-B3BF-27732A00D3E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C59FA33-DBB0-4DEF-B3BF-27732A00D3E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D422BAD0-6106-4309-8A71-341207B9A8A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D422BAD0-6106-4309-8A71-341207B9A8A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D422BAD0-6106-4309-8A71-341207B9A8A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D422BAD0-6106-4309-8A71-341207B9A8A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B6EF11D-F301-4D53-A9DF-252ABE34488A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B6EF11D-F301-4D53-A9DF-252ABE34488A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B6EF11D-F301-4D53-A9DF-252ABE34488A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B6EF11D-F301-4D53-A9DF-252ABE34488A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0494F5B0-B02D-48B3-891C-39364DA0D072}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0494F5B0-B02D-48B3-891C-39364DA0D072}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0494F5B0-B02D-48B3-891C-39364DA0D072}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0494F5B0-B02D-48B3-891C-39364DA0D072}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -111,9 +133,12 @@ Global
 		{8243C8CC-34F3-4A01-BE85-97821D7F6E6B} = {29283225-3098-4D04-A4A1-E64DDD9AD6C0}
 		{949A708D-C902-4B03-94E3-DDD33792E90B} = {29283225-3098-4D04-A4A1-E64DDD9AD6C0}
 		{69FAC226-23F9-42B6-B5E3-CA9D39B294B9} = {FA0B6190-6D5C-401A-93DA-FD25C32EAE75}
-		{ED8C1CE0-62FB-400A-B116-2CA60BAF5937} = {2EBD0ADE-9AAC-4AAF-AF73-D6251DCA90DB}
+		{ED8C1CE0-62FB-400A-B116-2CA60BAF5937} = {98E9071D-2FAE-40DA-9011-D4A5FC6E63FB}
 		{92C84090-B79F-4FD0-A2E9-91301F72D5FB} = {2EBD0ADE-9AAC-4AAF-AF73-D6251DCA90DB}
 		{7C59FA33-DBB0-4DEF-B3BF-27732A00D3E1} = {2EBD0ADE-9AAC-4AAF-AF73-D6251DCA90DB}
+		{D422BAD0-6106-4309-8A71-341207B9A8A7} = {98E9071D-2FAE-40DA-9011-D4A5FC6E63FB}
+		{7B6EF11D-F301-4D53-A9DF-252ABE34488A} = {F3E90150-5EA9-4B60-AB84-CC5FB3B24E0B}
+		{0494F5B0-B02D-48B3-891C-39364DA0D072} = {F3E90150-5EA9-4B60-AB84-CC5FB3B24E0B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {50EFF866-D6DB-445F-BF87-59AB69F37CF7}
