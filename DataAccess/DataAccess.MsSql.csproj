@@ -10,7 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DataAccess.Interfaces\DataAccess.Interfaces.csproj" />
-    <ProjectReference Include="..\Domain\Domain.csproj" />
+    <ProjectReference Include="..\Domain\Entities.csproj" />
   </ItemGroup>
 
 </Project>
