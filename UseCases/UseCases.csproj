@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -10,6 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ApplicationServices.Interfaces\ApplicationServices.Interfaces.csproj" />
     <ProjectReference Include="..\DataAccess.Interfaces\DataAccess.Interfaces.csproj" />
     <ProjectReference Include="..\DomainServices.Interfaces\DomainServices.Interfaces.csproj" />
     <ProjectReference Include="..\Email.Interfaces\Email.Interfaces.csproj" />

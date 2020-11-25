@@ -5,6 +5,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Application;
 using Application.Commands.CreateOrder;
+using ApplicationServices.Implementation;
+using ApplicationServices.Interfaces;
 using AutoMapper;
 using DataAccess;
 using DataAccess.Interface;
@@ -42,6 +44,7 @@ namespace WebApp
                 builder.UseSqlServer(Configuration.GetConnectionString("MsSql")));
 
             //Application
+            services.AddScoped<ISecurityService, SecurityService>();
 
             //Frameworks
             services.AddControllers();
