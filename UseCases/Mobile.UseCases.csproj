@@ -12,6 +12,7 @@
   <ItemGroup>
     <ProjectReference Include="..\ApplicationServices.Interfaces\ApplicationServices.Interfaces.csproj" />
     <ProjectReference Include="..\DataAccess.Interfaces\DataAccess.Interfaces.csproj" />
+    <ProjectReference Include="..\Delivery.Interfaces\Delivery.Interfaces.csproj" />
     <ProjectReference Include="..\DomainServices.Interfaces\DomainServices.Interfaces.csproj" />
     <ProjectReference Include="..\Email.Interfaces\Email.Interfaces.csproj" />
     <ProjectReference Include="..\WebApp.Interfaces\WebApp.Interfaces.csproj" />

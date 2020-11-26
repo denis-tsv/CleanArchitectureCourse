@@ -19,6 +19,7 @@
     <ProjectReference Include="..\ApplicationServices.Interfaces\ApplicationServices.Interfaces.csproj" />
     <ProjectReference Include="..\Controllers\Mobile.Controllers.csproj" />
     <ProjectReference Include="..\DataAccess\DataAccess.MsSql.csproj" />
+    <ProjectReference Include="..\Delivery.Company\Delivery.Company.csproj" />
     <ProjectReference Include="..\DomainServices.Implementation\DomainServices.Implementation.csproj" />
     <ProjectReference Include="..\Email.Implementation\Email.MailHandler.csproj" />
     <ProjectReference Include="..\UseCases\Mobile.UseCases.csproj" />

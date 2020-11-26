@@ -10,6 +10,8 @@ using ApplicationServices.Interfaces;
 using AutoMapper;
 using DataAccess;
 using DataAccess.Interface;
+using Delivery.Company;
+using Delivery.Interfaces;
 using DomainServices.Interfaces;
 using DomainServices.Implementation;
 using Infrastructure.Implementation;
@@ -33,7 +35,6 @@ namespace WebApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
             //Domain
             services.AddScoped<IOrderDomainService, OrderDomainService>();
 
@@ -42,6 +43,7 @@ namespace WebApp
             services.AddScoped<IEmailService, EmailService>();
             services.AddDbContext<IDbContext, AppDbContext>(builder =>
                 builder.UseSqlServer(Configuration.GetConnectionString("MsSql")));
+            services.AddScoped<IDeliveryService, DeliveryService>();
 
             //Application
             services.AddScoped<ISecurityService, SecurityService>();
