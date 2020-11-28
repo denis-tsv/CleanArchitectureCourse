@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ApplicationServices.Implementation\ApplicationServices.Implementation.csproj" />
+    <ProjectReference Include="..\DataAccess.MsSql\DataAccess.MsSql.csproj" />
+    <ProjectReference Include="..\Delivery.Company\Delivery.Company.csproj" />
+    <ProjectReference Include="..\DomainServices.Implementation\DomainServices.Implementation.csproj" />
+    <ProjectReference Include="..\Mobile.Controllers\Mobile.Controllers.csproj" />
+    <ProjectReference Include="..\Mobile.Telemetry.Company\Mobile.Telemetry.Company.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
+</Project>
