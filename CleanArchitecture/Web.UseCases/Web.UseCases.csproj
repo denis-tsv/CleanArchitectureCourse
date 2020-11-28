@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ApplicationServices.Interfaces\ApplicationServices.Interfaces.csproj" />
-    <ProjectReference Include="..\WebApi.Controllers\Web.Controllers.csproj" />
   </ItemGroup>
 
 </Project>
