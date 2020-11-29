@@ -18,6 +18,8 @@ using Mobile.Telemetry.Interfaces;
 using Mobile.TelemetryService.Company;
 using UseCases.Order.Commands.CreateOrder;
 using UseCases.Order.Utils;
+using Web.ApplicationServices.Implementation;
+using Web.ApplicationServices.Interfaces;
 using WebApp.Services;
 
 namespace WebApp
@@ -43,9 +45,13 @@ namespace WebApp
             services.AddScoped<ICurrentUserService, CurrentUserService>();
             services.AddDbContext<IDbContext, AppDbContext>(builder =>
                 builder.UseSqlServer(Configuration.GetConnectionString("MsSql")));
-
+            //Mobile
+            services.AddScoped<ITelemetryService, TelemetryService>();
+            
             //UseCases & Application
             services.AddScoped<ISecurityService, SecurityService>();
+            //Web
+            services.AddScoped<IWebAppService, WebAppService>();
 
             //Frameworks
             services.AddControllers();

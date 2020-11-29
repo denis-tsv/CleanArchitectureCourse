@@ -20,6 +20,8 @@
     <ProjectReference Include="..\DomainServices.Implementation\DomainServices.Implementation.csproj" />
     <ProjectReference Include="..\Mobile.Controllers\Mobile.Controllers.csproj" />
     <ProjectReference Include="..\Mobile.Telemetry.Company\Mobile.Telemetry.Company.csproj" />
+    <ProjectReference Include="..\Web.ApplicationServices.Implementation\Web.ApplicationServices.Implementation.csproj" />
+    <ProjectReference Include="..\Web.Controllers\Web.Controllers.csproj" />
   </ItemGroup>
 
   <ItemGroup>
