@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using Delivery.Interfaces;
 
 namespace Delivery.Company
@@ -8,6 +9,11 @@ namespace Delivery.Company
         public decimal CalculateDeliveryCost(float weight)
         {
             return (decimal)weight * 10;
+        }
+
+        public Task<bool> IsDeliveredAsync(int id)
+        {
+            return Task.FromResult(true);
         }
     }
 }
